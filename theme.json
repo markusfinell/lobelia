@@ -1,0 +1,127 @@
+{
+	"customTemplates": [],
+	"settings": {
+		"appearanceTools": false,
+		"border": {
+			"color": false,
+			"radius": false,
+			"style": false,
+			"width": false
+		},
+		"color": {
+			"background": false,
+			"custom": false,
+			"customDuotone": false,
+			"customGradient": false,
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [],
+			"gradients": [],
+			"link": false,
+			"palette": [
+				{
+					"color": "var(--color--black)",
+					"name": "Foreground",
+					"slug": "foreground"
+				},
+				{
+					"color": "var(--color--white)",
+					"name": "Background",
+					"slug": "background"
+				}
+			],
+			"text": false
+		},
+		"spacing": {
+			"blockGap": false,
+			"margin": false,
+			"padding": false,
+			"units": [
+				"em",
+				"rem"
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "Helvetica, Arial, Verdana, sans-serif",
+					"name": "Sans Serif",
+					"slug": "sans-serif"
+				},
+				{
+					"fontFamily": "Times, serif",
+					"name": "Serif",
+					"slug": "serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"size": "var(--size--sm)",
+					"slug": "sm"
+				},
+				{
+					"size": "var(--size--md)",
+					"slug": "md"
+				},
+				{
+					"size": "var(--size--lg)",
+					"slug": "lg"
+				},
+				{
+					"size": "var(--size--xl)",
+					"slug": "xl"
+				},
+				{
+					"size": "var(--size--2-xl)",
+					"slug": "2-xl"
+				},
+				{
+					"size": "var(--size--3-xl)",
+					"slug": "3-xl"
+				}
+			],
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textDecoration": false,
+			"textTransform": false
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var(--color--background)",
+			"text": "var(--color--foreground)"
+		},
+		"spacing": {
+			"blockGap": "",
+			"padding": {
+				"left": "var(--space--md, 1rem)",
+				"right": "var(--space--md, 1rem)"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--sans-serif)",
+			"fontSize": "var(--size--md)",
+			"lineHeight": "1.5"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.2/theme.json"
+}
