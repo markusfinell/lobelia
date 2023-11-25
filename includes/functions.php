@@ -66,10 +66,6 @@ function lobelia_register_blocks($build = '')
     array_map(
         function ($dir) use ($blocks_dir, $src_dir) {
             register_block_type($blocks_dir . '/' . $dir);
-
-            // if (file_exists($blocks_dir . '/' . $dir . '/view.js')) {
-            //     wp_register_script($dir . '-js', get_template_directory_uri() . '/build/blocks/' . $dir . '/view.js', [], '0.1.0', true);
-            // }
         },
         $blocks
     );
