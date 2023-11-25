@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks/temp/index.css","mappings":";;;AAAA;CACC,uBAAuB;AACxB","sources":["webpack://marsapril-pure/./src/blocks/temp/editor.css"],"sourcesContent":[".wp-block-create-block-marsapril-pure {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}

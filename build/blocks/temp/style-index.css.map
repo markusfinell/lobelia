@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks/temp/style-index.css","mappings":";;;AAAA;CACC,yBAAyB;CACzB,WAAW;CACX,YAAY;AACb","sources":["webpack://marsapril-pure/./src/blocks/temp/style.css"],"sourcesContent":[".wp-block-map-temp {\n\tbackground-color: #21759b;\n\tcolor: #fff;\n\tpadding: 2px;\n}\n"],"names":[],"sourceRoot":""}

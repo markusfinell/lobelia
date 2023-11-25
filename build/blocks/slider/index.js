@@ -152,7 +152,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"lobelia/slider","version":"0.1.0","title":"Slider","category":"lobelia","icon":"slides","description":"Slider Block.","supports":{"html":false},"textdomain":"lobelia","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":["slider-js"]}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"lobelia/slider","version":"0.1.0","title":"Slider","category":"lobelia","icon":"slides","description":"Slider Block.","supports":{"html":false},"textdomain":"lobelia","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
