@@ -1,1 +1,0 @@
-{"version":3,"file":"script.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAG,CAAC,IAAI,CAAC,C","sources":["webpack://marsapril-pure/./src/js/main.js"],"sourcesContent":["console.log(\"js\");\n"],"names":["console","log"],"sourceRoot":""}

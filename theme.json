@@ -9,7 +9,7 @@
 			"width": false
 		},
 		"color": {
-			"background": false,
+			"background": true,
 			"custom": false,
 			"customDuotone": false,
 			"customGradient": false,
@@ -22,25 +22,35 @@
 			"palette": [
 				{
 					"color": "var(--color--black)",
-					"name": "Foreground",
-					"slug": "foreground"
+					"name": "Black",
+					"slug": "black"
 				},
 				{
 					"color": "var(--color--white)",
-					"name": "Background",
-					"slug": "background"
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "var(--color--orange)",
+					"name": "Orange",
+					"slug": "orange"
+				},
+				{
+					"color": "var(--color--green)",
+					"name": "Green",
+					"slug": "green"
 				}
 			],
 			"text": false
 		},
+		"layout": {
+			"contentSize": "var(--content-size)",
+			"wideSize": "var(--wide-size)"
+		},
 		"spacing": {
 			"blockGap": false,
 			"margin": false,
-			"padding": false,
-			"units": [
-				"em",
-				"rem"
-			]
+			"padding": false
 		},
 		"typography": {
 			"customFontSize": false,
@@ -55,9 +65,27 @@
 					"fontFamily": "Times, serif",
 					"name": "Serif",
 					"slug": "serif"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Calligraffitti",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/calligraffitti_normal_400.ttf"
+							]
+						}
+					],
+					"fontFamily": "Calligraffitti",
+					"slug": "calligraffitti"
 				}
 			],
 			"fontSizes": [
+				{
+					"size": "var(--size--xs)",
+					"slug": "xs"
+				},
 				{
 					"size": "var(--size--sm)",
 					"slug": "sm"
@@ -93,21 +121,8 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
-		"color": {
-			"background": "var(--color--background)",
-			"text": "var(--color--foreground)"
-		},
 		"spacing": {
-			"blockGap": "",
-			"padding": {
-				"left": "var(--space--md, 1rem)",
-				"right": "var(--space--md, 1rem)"
-			}
-		},
-		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-			"fontSize": "var(--size--md)",
-			"lineHeight": "1.5"
+			"blockGap": ""
 		}
 	},
 	"templateParts": [
@@ -123,5 +138,5 @@
 		}
 	],
 	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.2/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json"
 }

@@ -1,0 +1,8 @@
+[class*="wrap--"] {
+	max-width: var(--wide-size);
+	margin-inline: auto;
+}
+
+.wrap--sm {
+	max-width: var(--content-size);
+}

@@ -1,0 +1,13 @@
+.footer {
+	padding-block: var(--size--3-xl);
+	background-color: var(--color--green);
+	color: var(--color--white);
+}
+
+.footer .wp-block-navigation {
+	line-height: 2;
+}
+
+.footer :not(.wp-block-site-title) a:hover {
+	color: var(--color--orange);
+}

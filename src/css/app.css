@@ -1,1 +1,24 @@
+@import './global/variables.css';
 @import './global/reset.css';
+@import './global/typography.css';
+@import './global/elements.css';
+@import './global/base.css';
+@import './global/utilities.css';
+
+@import './parts/header.css';
+@import './parts/footer.css';
+
+@import './blocks/button.css';
+@import './blocks/cover.css';
+@import './blocks/columns.css';
+@import './blocks/heading.css';
+@import './blocks/image.css';
+@import './blocks/site-title.css';
+
+@import './patterns/full-wide.css';
+@import './patterns/gallery.css';
+@import './patterns/media-text.css';
+@import './patterns/overlay-blurbs.css';
+@import './patterns/one-two.css';
+
+@import '../../node_modules/flickity/dist/flickity.min.css';

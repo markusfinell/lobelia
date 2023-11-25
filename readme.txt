@@ -53,3 +53,10 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
 plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
 "installation." Arbitrary sections will be shown below the built-in sections outlined above.
+
+Calligraffitti Font
+Copyright (c) 2010 by Open Window. All rights reserved. 
+Licensed under the Apache License, Version 2.0 
+License URL: http://www.apache.org/licenses/LICENSE-2.0 
+Source: http://www.fontbros.com/openwindow.php
+-- End of Calligraffitti Font credits --

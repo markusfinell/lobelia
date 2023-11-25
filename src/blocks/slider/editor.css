@@ -1,0 +1,9 @@
+.wp-block-lobelia-slider {
+	display: flex;
+	overflow: auto;
+	gap: var(--size--md);
+}
+
+.wp-block-lobelia-slider > * {
+	min-width: 90%;
+}

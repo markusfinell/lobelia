@@ -1,0 +1,13 @@
+.wp-block-cover {
+	min-height: 540px;
+	height: 60vh;
+}
+
+.wp-block-cover .wp-block-heading {
+	font-family: var(--wp--preset--font-family--calligraffitti);
+	margin-block: var(--size--lg);
+}
+
+.wp-block-cover .has-background-dim ~ .wp-block-cover__inner-container {
+	color: var(--color--white);
+}

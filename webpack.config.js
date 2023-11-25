@@ -5,6 +5,7 @@ module.exports = {
 	entry: {
 		...defaultConfig.entry(),
 		style: "./src/css/app.css",
+		editor: "./src/css/editor.css",
 		script: "./src/js/main.js",
 	},
 };

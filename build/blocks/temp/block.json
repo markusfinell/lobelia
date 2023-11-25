@@ -1,16 +1,16 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "ma/temp",
+  "name": "lobelia/temp",
   "version": "0.1.0",
-  "title": "Marsapril Pure",
-  "category": "marsapril",
+  "title": "Lobelia",
+  "category": "lobelia",
   "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "Lobelia Block.",
   "supports": {
     "html": false
   },
-  "textdomain": "ma",
+  "textdomain": "lobelia",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

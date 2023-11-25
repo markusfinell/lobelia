@@ -1,0 +1,7 @@
+.media-text {
+	padding-block: var(--size--3-xl);
+}
+
+.media-text .wp-block-columns {
+	gap: var(--size--lg);
+}

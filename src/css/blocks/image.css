@@ -1,0 +1,42 @@
+.wp-block-image.is-style-blob {
+	position: relative;
+}
+
+.wp-block-image.is-style-blob figcaption {
+	display: none;
+}
+
+.wp-block-image.is-style-blob:before {
+	content: '';
+	display: block;
+	padding-bottom: 88.23%;
+	border: .26em solid #fff;
+	position: relative;
+	z-index: 3;
+}
+
+.wp-block-image.is-style-blob > :not(figcaption) {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+}
+
+.wp-block-image.is-style-blob:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-size: contain;
+	background-image: url(/assets/images/blob-white.svg);
+}
+
+.wp-block-image.is-style-rounded img {
+	border-radius: var(--size--lg);
+}

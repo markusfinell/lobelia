@@ -1,0 +1,6 @@
+@import './global/variables.css';
+
+picture,
+img {
+  max-width: 100%;
+}

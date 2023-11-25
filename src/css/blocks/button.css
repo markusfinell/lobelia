@@ -1,0 +1,10 @@
+.wp-block-button__link {
+	background-color: var(--color--orange);
+	border-radius: var(--size--md);
+	font-size: var(--size--sm);
+}
+
+.wp-block-button__link:hover {
+	background-color: var(--color--green);
+	color: var(--color--white);
+}

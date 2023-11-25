@@ -1,5 +1,15 @@
 <?php
 
+function printr()
+{
+    array_map(
+        function ($arg) {
+            printf('<pre style="margin-block="1rem;font-family:monospace;">%s</pre>', print_r($arg, 1));
+        },
+        func_get_args()
+    );
+}
+
 /**
  * Check if block directory is of an actual block,
  * including a block.json file, and is not template
@@ -47,8 +57,9 @@ function lobelia_get_blocks()
  */
 function lobelia_register_blocks($build = '')
 {
-    $blocks_dir = __DIR__ . '/build/blocks';
-    $src_dir = __DIR__ . '/src/blocks';
+    $template_dir = get_template_directory();
+    $blocks_dir = $template_dir . '/build/blocks';
+    $src_dir = $template_dir . '/src/blocks';
 
     $blocks = lobelia_get_blocks();
 
@@ -58,6 +69,10 @@ function lobelia_register_blocks($build = '')
 
             if (file_exists($src_dir . '/' . $dir . '/functions.php')) {
                 include_once $src_dir . '/' . $dir . '/functions.php';
+            }
+
+            if (file_exists($blocks_dir . '/' . $dir . '/view.js')) {
+                wp_register_script($dir . '-js', get_template_directory_uri() . '/build/blocks/' . $dir . '/view.js', [], '0.1.0', true);
             }
         },
         $blocks
@@ -77,31 +92,12 @@ function lobelia_register_rest_routes()
     );
 }
 
-function lobelia_get_data()
-{
-    return true;
-}
-
-function lobelia_allow_block_types($allowed_block_types)
-{
-    $allowed_block_types = array_values(
-        array_map(
-            function ($block) {
-                return 'ma/' . $block;
-            },
-            lobelia_get_blocks()
-        )
-    );
-
-    return $allowed_block_types;
-}
-
 function lobelia_add_block_categories($categories)
 {
     // Adding a new category.
     $categories[] = [
-    'slug'  => 'marsapril',
-    'title' => 'MarsApril'
+        'slug'  => 'lobelia',
+        'title' => 'Lobelia'
     ];
 
     return $categories;
@@ -109,5 +105,37 @@ function lobelia_add_block_categories($categories)
 
 function lobelia_enqueue_scripts()
 {
-    wp_enqueue_style('map-style', get_stylesheet_uri(), [], '0.1.0', 'all');
+    wp_enqueue_style('lobelia-style', get_template_directory_uri() . '/build/style.css', [], '0.1.0', 'all');
+}
+
+function lobelia_block_editor_assets()
+{
+    wp_enqueue_style('lobelia-editor-style', get_template_directory_uri() . '/build/editor.css', [], '0.1.0', 'all');
+}
+
+function lobelia_unregister_patterns()
+{
+    remove_theme_support('core-block-patterns');
+}
+
+function lobelia_add_editor_style()
+{
+    add_editor_style(get_template_directory_uri() . '/build/style.css');
+}
+
+function lobelia_register_block_styles()
+{
+    register_block_style(
+        'core/image',
+        [
+            'name' => 'blob',
+            'label' => 'Blob'
+        ]
+    );
+}
+
+function lobelia_remove_core_block_styles()
+{
+    wp_dequeue_style('wp-block-gallery');
+    wp_dequeue_style('wp-block-gallery');
 }

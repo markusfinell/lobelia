@@ -1,0 +1,22 @@
+.header {
+	padding-block: var(--size--lg);
+}
+
+.header .wp-block-navigation {
+	gap: var(--size--xl);
+	font-size: var(--size--sm);
+}
+
+.header .current-menu-item,
+.header .wp-block-navigation-link:hover {
+	color: var(--color--orange);
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.header .current-menu-item a {
+	padding-block: .25em;
+	border-bottom: .1em solid var(--color--orange);
+}

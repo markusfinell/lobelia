@@ -1,0 +1,12 @@
+.wp-block-site-title {
+	font-size: var(--size--xl);
+	font-family: var(--wp--preset--font-family--calligraffitti);
+}
+
+.wp-block-site-title a {
+	text-decoration: none;
+}
+
+.wp-block-site-title a:hover {
+	color: inherit;
+}
