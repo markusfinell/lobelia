@@ -161,23 +161,23 @@ body {
 h1 {
 	font-size: var(--size--2-xl);
 	font-family: var(--wp--preset--font-family--calligraffitti);
-	line-height: 1.2em;
+	line-height: 1.15em;
 }
 
 h2 {
 	font-size: var(--size--xl);
 	font-family: var(--wp--preset--font-family--calligraffitti);
-	line-height: 1.3em;
+	line-height: 1.2em;
 }
 
 h3 {
 	font-size: var(--size--lg);
-	line-height: 1.35em;
+	line-height: 1.25em;
 }
 
 h4 {
 	font-size: var(--size--md);
-	line-height: 1.35em;
+	line-height: 1.3em;
 }
 
 h5 {
@@ -463,7 +463,8 @@ a[href*="instagram.com"]:before {
 }
 
 .gallery .wp-block-image {
-	flex: 0 0 calc(33.33% - 2 * var(--size--lg) / 3);
+	flex: 1 0 calc(33.33% - 2 * var(--size--lg) / 3);
+  min-width: 250px;
 	position: relative;
 	border-radius: var(--size--lg);
 	overflow: hidden;
@@ -494,6 +495,7 @@ a[href*="instagram.com"]:before {
 	opacity: 0;
 	transition: opacity .2s ease-in-out;
 	color: var(--color--white);
+  line-height: 1.2;
 }
 
 .gallery .wp-block-image:hover figcaption {

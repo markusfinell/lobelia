@@ -12,7 +12,8 @@
 }
 
 .gallery .wp-block-image {
-	flex: 0 0 calc(33.33% - 2 * var(--size--lg) / 3);
+	flex: 1 0 calc(33.33% - 2 * var(--size--lg) / 3);
+  min-width: 250px;
 	position: relative;
 	border-radius: var(--size--lg);
 	overflow: hidden;
@@ -43,6 +44,7 @@
 	opacity: 0;
 	transition: opacity .2s ease-in-out;
 	color: var(--color--white);
+  line-height: 1.2;
 }
 
 .gallery .wp-block-image:hover figcaption {
